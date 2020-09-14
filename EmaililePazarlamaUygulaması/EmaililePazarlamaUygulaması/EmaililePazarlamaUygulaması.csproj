@@ -82,11 +82,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\AddressLists\" />
     <Folder Include="Data\EmailTemplates\" />
     <Folder Include="Data\User\ReachData\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\AddressLists\deneme1.txt" />
+    <Content Include="Data\AddressLists\deneme2.txt" />
     <Content Include="Data\deneme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
