@@ -1,0 +1,10 @@
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\bin\Debug\EmaililePazarlamaUygulaması.exe.config
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\bin\Debug\EmaililePazarlamaUygulaması.exe
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\bin\Debug\EmaililePazarlamaUygulaması.pdb
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.csprojAssemblyReference.cache
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.Properties.Resources.resources
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.csproj.GenerateResource.cache
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.csproj.CoreCompileInputs.cache
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.exe
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.pdb
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.MainPanel.resources
