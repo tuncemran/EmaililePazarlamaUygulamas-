@@ -8,3 +8,4 @@ C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarla
 C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.exe
 C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.pdb
 C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.MainPanel.resources
+C:\Users\TUNC\source\repos\tuncemran\EmaililePazarlamaUygulamas-\EmaililePazarlamaUygulaması\EmaililePazarlamaUygulaması\obj\Debug\EmaililePazarlamaUygulaması.Source.AddEmailList.resources

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
             this.listView2 = new System.Windows.Forms.ListView();
             this.listView3 = new System.Windows.Forms.ListView();
             this.button1 = new System.Windows.Forms.Button();
@@ -50,18 +49,9 @@
             this.düzeltToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.geçmişToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.temizleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(35, 103);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(560, 540);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // listView2
             // 
@@ -80,6 +70,7 @@
             this.listView3.Size = new System.Drawing.Size(489, 581);
             this.listView3.TabIndex = 2;
             this.listView3.UseCompatibleStateImageBehavior = false;
+            this.listView3.SelectedIndexChanged += new System.EventHandler(this.listView3_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -143,6 +134,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.seçeneklerToolStripMenuItem});
@@ -160,7 +152,7 @@
             this.emailŞablonlarıToolStripMenuItem,
             this.geçmişToolStripMenuItem});
             this.seçeneklerToolStripMenuItem.Name = "seçeneklerToolStripMenuItem";
-            this.seçeneklerToolStripMenuItem.Size = new System.Drawing.Size(111, 29);
+            this.seçeneklerToolStripMenuItem.Size = new System.Drawing.Size(111, 48);
             this.seçeneklerToolStripMenuItem.Text = "Seçenekler";
             // 
             // emailServisiniDeğştirToolStripMenuItem
@@ -176,25 +168,26 @@
             this.çıkarToolStripMenuItem,
             this.düzeltToolStripMenuItem});
             this.emailListeleriToolStripMenuItem.Name = "emailListeleriToolStripMenuItem";
-            this.emailListeleriToolStripMenuItem.Size = new System.Drawing.Size(287, 34);
+            this.emailListeleriToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.emailListeleriToolStripMenuItem.Text = "Email Listeleri";
             // 
             // ekleToolStripMenuItem
             // 
             this.ekleToolStripMenuItem.Name = "ekleToolStripMenuItem";
             this.ekleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
-            this.ekleToolStripMenuItem.Text = "Ekle";
+            this.ekleToolStripMenuItem.Text = "Liste Ekle";
+            this.ekleToolStripMenuItem.Click += new System.EventHandler(this.ekleToolStripMenuItem_Click);
             // 
             // çıkarToolStripMenuItem
             // 
             this.çıkarToolStripMenuItem.Name = "çıkarToolStripMenuItem";
-            this.çıkarToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.çıkarToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
             this.çıkarToolStripMenuItem.Text = "Çıkar";
             // 
             // düzeltToolStripMenuItem
             // 
             this.düzeltToolStripMenuItem.Name = "düzeltToolStripMenuItem";
-            this.düzeltToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.düzeltToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
             this.düzeltToolStripMenuItem.Text = "Düzelt";
             // 
             // emailŞablonlarıToolStripMenuItem
@@ -204,25 +197,25 @@
             this.çıkarToolStripMenuItem1,
             this.düzeltToolStripMenuItem1});
             this.emailŞablonlarıToolStripMenuItem.Name = "emailŞablonlarıToolStripMenuItem";
-            this.emailŞablonlarıToolStripMenuItem.Size = new System.Drawing.Size(287, 34);
+            this.emailŞablonlarıToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.emailŞablonlarıToolStripMenuItem.Text = "Email Şablonları";
             // 
             // ekleToolStripMenuItem1
             // 
             this.ekleToolStripMenuItem1.Name = "ekleToolStripMenuItem1";
-            this.ekleToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.ekleToolStripMenuItem1.Size = new System.Drawing.Size(164, 34);
             this.ekleToolStripMenuItem1.Text = "Ekle";
             // 
             // çıkarToolStripMenuItem1
             // 
             this.çıkarToolStripMenuItem1.Name = "çıkarToolStripMenuItem1";
-            this.çıkarToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.çıkarToolStripMenuItem1.Size = new System.Drawing.Size(164, 34);
             this.çıkarToolStripMenuItem1.Text = "Çıkar";
             // 
             // düzeltToolStripMenuItem1
             // 
             this.düzeltToolStripMenuItem1.Name = "düzeltToolStripMenuItem1";
-            this.düzeltToolStripMenuItem1.Size = new System.Drawing.Size(270, 34);
+            this.düzeltToolStripMenuItem1.Size = new System.Drawing.Size(164, 34);
             this.düzeltToolStripMenuItem1.Text = "Düzelt";
             // 
             // geçmişToolStripMenuItem
@@ -230,20 +223,31 @@
             this.geçmişToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.temizleToolStripMenuItem});
             this.geçmişToolStripMenuItem.Name = "geçmişToolStripMenuItem";
-            this.geçmişToolStripMenuItem.Size = new System.Drawing.Size(287, 34);
+            this.geçmişToolStripMenuItem.Size = new System.Drawing.Size(291, 34);
             this.geçmişToolStripMenuItem.Text = "Geçmiş";
             // 
             // temizleToolStripMenuItem
             // 
             this.temizleToolStripMenuItem.Name = "temizleToolStripMenuItem";
-            this.temizleToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.temizleToolStripMenuItem.Size = new System.Drawing.Size(171, 34);
             this.temizleToolStripMenuItem.Text = "Temizle";
+            // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 29;
+            this.listBox1.Location = new System.Drawing.Point(35, 103);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(548, 526);
+            this.listBox1.TabIndex = 10;
             // 
             // MainPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1876, 920);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -252,7 +256,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listView3);
             this.Controls.Add(this.listView2);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(1898, 976);
@@ -269,8 +272,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.Button button1;
@@ -292,6 +293,7 @@
         private System.Windows.Forms.ToolStripMenuItem düzeltToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem geçmişToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem temizleToolStripMenuItem;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

@@ -24,7 +24,7 @@ namespace EmaililePazarlamaUygulaması
             }
 
             ;
-            string path = System.IO.Path.Combine(changeDirectory, @"Data\", fileName);
+            string path = Path.Combine(changeDirectory, @"Data\", fileName);
             return path;
         }
 
@@ -46,12 +46,19 @@ namespace EmaililePazarlamaUygulaması
         }
 
         //Check if file exists or create file and return file
-        public static void CreateFile(string filePath)
+        public static void CreateFile(string directoryPath)
         {
-            string directoryPath = GetFilePath(filePath);
             if (!File.Exists(directoryPath))
             {
-                File.Create(directoryPath);
+                try
+                {
+                    File.Create(directoryPath);
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.Forms.MessageBox.Show(ex.Message + directoryPath);
+                }
+                
             }
         }
         //File Write operation

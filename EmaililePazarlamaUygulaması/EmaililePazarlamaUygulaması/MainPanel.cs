@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmaililePazarlamaUygulaması.Source;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace EmaililePazarlamaUygulaması
         public MainPanel()
         {
             InitializeComponent();
+            string[] fileList = Utilties.ListDirectory("AddressLists", true);
+            for (int i = 0; i < fileList.Length; i++)
+            {
+                string filePath = fileList[i];
+                char[] delim = {'\\'};
+                string[] fileName = filePath.Split(delim);
+                listBox1.Items.Add(fileName[fileName.Length -1]);
+            }
+            
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -32,16 +43,22 @@ namespace EmaililePazarlamaUygulaması
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string path = Utilties.GetFilePath("AddressList");
             string deneme = Utilties.ListDirectory("",false)[0];
             richTextBox1.Text = deneme;
+        }
+
+        private void listView3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ekleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddEmailList addEmail = new AddEmailList();
+            addEmail.ShowDialog();
         }
     }
 }
