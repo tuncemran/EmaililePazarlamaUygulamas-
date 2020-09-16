@@ -57,7 +57,7 @@ namespace EmaililePazarlamaUygulaması
 
         private void ekleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddEmailList addEmail = new AddEmailList();
+            AddEmailList addEmail = new AddEmailList(listBox1);
             addEmail.ShowDialog();
         }
     }
